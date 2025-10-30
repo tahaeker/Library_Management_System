@@ -21,12 +21,13 @@ void Book::BorrowBookFromBook() {
 
 void Book::BookFromBorrowBook () {
 	isBorrowed = false;
+
 }
 
 bool Book::isAvailable() {
 	return !isBorrowed;
 }
 
-int Book::getId() {
+int Book::getID() {
 	return id;
 }	

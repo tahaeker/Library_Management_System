@@ -13,11 +13,10 @@ private:
 public:
 
 	Library(string fileName);
-	void loadBooksFromFile();
-	void saveBooksToFile();
+	void loadBooksFromFile(string title);
 	void saveBooksToFile();
 	void listAllBooks();
-	void BorrowBookFromBook(int bookID);
+	void borrowBookFromBook(int bookID);
 	void returnBookFromBorrowBook(int bookID);
 
 
