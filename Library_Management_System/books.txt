@@ -1,0 +1,21 @@
+ID,Title,Author,BorrowStatus
+1,Call of the Wild,Jack London,0
+2,Martin Eden,Jack London,1
+3,To Kill a Mockingbird,Harper Lee,0
+4,1984,George Orwell,0
+5,The Great Gatsby,F. Scott Fitzgerald,1
+6,War and Peace,Leo Tolstoy,0
+7,Moby Dick,Herman Melville,1
+8,Crime and Punishment,Fyodor Dostoevsky,0
+9,The Lord of the Rings,J.R.R. Tolkien,0
+10,Don Quixote,Miguel de Cervantes,0
+11,Brave New World,Aldous Huxley,1
+12,The Catcher in the Rye,J.D. Salinger,0
+13,Les Misérables,Victor Hugo,1
+14,Jane Eyre,Charlotte Brontë,0
+15,Pride and Prejudice,Jane Austen,0
+16,The Hobbit,J.R.R. Tolkien,1
+17,Animal Farm,George Orwell,0
+18,The Alchemist,Paulo Coelho,0
+19,The Picture of Dorian Gray,Oscar Wilde,1
+20,The Count of Monte Cristo,Alexandre Dumas,0
