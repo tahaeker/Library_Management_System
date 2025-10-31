@@ -1,5 +1,4 @@
 #pragma once
-
 #include <string>
 using namespace std;
 
@@ -11,11 +10,12 @@ private:
     bool isBorrowed;
 
 public:
-    void setBookDetails(int, string, string, bool);
-    void display();
-    void BorrowBookFromBook();
-    void BookFromBorrowBook();
-    bool isAvailable();
-    int getID();
-    string getSaveFormat();
+    Book() = default;
+    void setBookDetails(int id, const string& title, const string& author, bool status);
+    string display() const;         
+    bool borrowBook();              
+    bool returnBook();              
+    bool isAvailable() const;
+    int getID() const;
+    string getSaveFormat() const;
 };

@@ -1,33 +1,39 @@
-#include "Book.h"  
-#include <iostream>
+#include "Book.h"
 
-void Book::setBookDetails(int i, string t, string a, bool s) {
-	id = i;
-	title = t;
-	author = a;
-	isBorrowed = s;
+void Book::setBookDetails(int i, const string& t, const string& a, bool s) {
+    id = i;
+    title = t;
+    author = a;
+    isBorrowed = s;
 }
 
-void Book::display() {
-	cout << "Book ID: " << id << endl;
-	cout << "Title: " << title << endl;
-	cout << "Author: " << author << endl;
-	cout << "Status: " << (isBorrowed ? "Borrowed" : "Available") << endl;
+string Book::display() const {
+    return "ID: " + to_string(id) +
+        " | Title: " + title +
+        " | Author: " + author +
+        " [" + (isBorrowed ? "Borrowed" : "Available") + "]";
 }
 
-void Book::BorrowBookFromBook() {
-	isBorrowed = true;
+bool Book::borrowBook() {
+    if (isBorrowed) return false;
+    isBorrowed = true;
+    return true;
 }
 
-void Book::BookFromBorrowBook () {
-	isBorrowed = false;
-
+bool Book::returnBook() {
+    if (!isBorrowed) return false;
+    isBorrowed = false;
+    return true;
 }
 
-bool Book::isAvailable() {
-	return !isBorrowed;
+bool Book::isAvailable() const {
+    return !isBorrowed;
 }
 
-int Book::getID() {
-	return id;
-}	
+int Book::getID() const {
+    return id;
+}
+
+string Book::getSaveFormat() const {
+    return to_string(id) + "," + title + "," + author + "," + (isBorrowed ? "1" : "0");
+}

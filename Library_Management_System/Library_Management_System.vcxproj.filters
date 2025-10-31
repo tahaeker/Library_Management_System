@@ -26,14 +26,19 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="books.txt" />
-  </ItemGroup>
-  <ItemGroup>
     <ClInclude Include="Book.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Library.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="books.txt">
+      <Filter>Source Files</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\..\Downloads\README.md" />
   </ItemGroup>
 </Project>

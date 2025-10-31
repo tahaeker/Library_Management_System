@@ -1,4 +1,3 @@
-ID,Title,Author,BorrowStatus
 1,Call of the Wild,Jack London,0
 2,Martin Eden,Jack London,1
 3,To Kill a Mockingbird,Harper Lee,0
